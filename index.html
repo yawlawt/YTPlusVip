@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YT PLUS VIP VPN - Premium Access</title>
+    <title>YT PLUS VPN - Premium Access</title>
     <link rel="icon" href="https://raw.githubusercontent.com/yawlawt/YTPlusVip/main/images/icon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -528,13 +528,13 @@
         <header>
             <div class="logo">
                 <img src="https://raw.githubusercontent.com/yawlawt/YTPlusVip/main/images/icon.png" alt="YT PLUS VIP VPN Logo">
-                <h1>YT PLUS VIP VPN</h1>
+                <h1>YT PLUS VPN</h1>
             </div>
             <button class="theme-toggle" id="themeToggle"></button>
         </header>
         
         <section class="download-section">
-            <h2>Download YT PLUS VIP VPN Now</h2>
+            <h2>Download YT PLUS VPN</h2>
             <p>Get unlimited access to content with our high-speed VPN service</p>
             
             <a href="https://download.yawlawt.online/YT_PLUS_VPNcom.yt.plusv2.0.apk" class="download-btn">
@@ -556,7 +556,7 @@
             <div class="pricing-plans">
                 <div class="plan">
                     <h3>1 Month Plan</h3>
-                    <div class="price">50 THB</div>
+                    <div class="price">70 THB</div>
                     <ul>
                         <li>Full Access to All Servers</li>
                         <li>Unlimited Bandwidth</li>
@@ -568,7 +568,7 @@
                 
                 <div class="plan">
                     <h3>2 Months Plan</h3>
-                    <div class="price">100 THB</div>
+                    <div class="price">130 THB</div>
                     <ul>
                         <li>Full Access to All Servers</li>
                         <li>Unlimited Bandwidth</li>
@@ -580,7 +580,7 @@
                 
                 <div class="plan">
                     <h3>3 Months Plan</h3>
-                    <div class="price">150 THB</div>
+                    <div class="price">200 THB</div>
                     <ul>
                         <li>Full Access to All Servers</li>
                         <li>Unlimited Bandwidth</li>
@@ -682,9 +682,9 @@
         </section>
         
         <section class="tutorial-section">
-            <h2>How to Use - YouTube Tutorial</h2>
+            <h2>How to Use - Video Tutorial</h2>
             <div class="video-container">
-                <iframe src="https://www.youtube-nocookie.com/embed/YEUjBdN7OD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://video.yawlawt.online/ytplus-vpn-download.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         
@@ -693,7 +693,7 @@
                 <i class="fas fa-comments"></i>
             </button>
             <div class="social-links" id="socialLinks">
-                <a href="https://t.me/thaisimfreenet" class="social-link telegram">
+                <a href="https://t.me/ytvpnnetmod" class="social-link telegram">
                     <i class="fab fa-telegram"></i>
                 </a>
                 <a href="https://m.me/yawlawt2431" class="social-link messenger">
@@ -703,7 +703,7 @@
         </div>
         
         <footer>
-            <p>&copy; 2023 YT PLUS VIP VPN. All rights reserved.</p>
+            <p>&copy; 2023 YT PLUS VPN. All rights reserved.</p>
         </footer>
     </div>
 
@@ -735,7 +735,7 @@
         
         // Set current year for copyright
         document.addEventListener('DOMContentLoaded', function() {
-            document.querySelector('footer p').innerHTML = '&copy; ' + new Date().getFullYear() + ' YT PLUS VIP VPN. All rights reserved.';
+            document.querySelector('footer p').innerHTML = '&copy; ' + new Date().getFullYear() + ' YT PLUS VPN. All rights reserved.';
             
             // English clock functionality
             function updateEnglishClock() {
@@ -765,5 +765,59 @@
             setInterval(updateEnglishClock, 1000);
         });
     </script>
-</body>
-                      </html>
+</body> <style>
+/* Snow Effect */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    user-select: none;
+    pointer-events: none;
+    z-index: 9999;
+    animation-name: fall, sway;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(0); }
+}
+</style>
+
+<script>
+/* Snow Effect Script */
+const snowCount = 40; // ❄️ snowflakes amount
+
+for (let i = 0; i < snowCount; i++) {
+    const snow = document.createElement("div");
+    snow.className = "snowflake";
+    snow.innerHTML = "❄";
+    
+    snow.style.left = Math.random() * 100 + "vw";
+    snow.style.fontSize = Math.random() * 10 + 10 + "px";
+    snow.style.animationDuration =
+        Math.random() * 5 + 5 + "s, " + (Math.random() * 3 + 2) + "s";
+    snow.style.animationDelay = Math.random() * 5 + "s";
+
+    document.body.appendChild(snow);
+}
+</script>
+</html>
